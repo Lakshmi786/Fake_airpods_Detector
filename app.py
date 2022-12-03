@@ -61,9 +61,7 @@ class airpods(object):
 
 def app_check(input_model,input_charging_case_serial,input_box_serial_number,input_leftbud_model,input_rightbud_model,input_leftbud_serial,input_rightbud_serial,input_firmware):
   input_dict = master#ast.literal_eval(os.environ.get('master'))
-  print('the values',[len(input_charging_case_serial) , len(input_charging_case_serial) , len(input_leftbud_serial) , len(input_rightbud_serial)])
-  print('the condition 1 check',all([len(input_charging_case_serial) , len(input_charging_case_serial) , len(input_leftbud_serial) , len(input_rightbud_serial)]) >= 10)
-  print('the condition 2 check',all([len(input_charging_case_serial) , len(input_charging_case_serial) , len(input_leftbud_serial) , len(input_rightbud_serial)]) < 15)
+  
 
   if  (all(i >= 10 for i in valu) and any(i < 15 for i in valu))  :
     airpod = airpods(input_dict,input_model,input_charging_case_serial,input_box_serial_number,input_leftbud_model,input_rightbud_model,input_leftbud_serial,input_rightbud_serial,input_firmware)

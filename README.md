@@ -11,7 +11,6 @@ Extremely sorry, Your Earpods/ Headphones are Probably Knock off
 This code requires the following modules:
 
 pandas
-ast
 os
 gradio
 
